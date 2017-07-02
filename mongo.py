@@ -16,3 +16,7 @@ result_id = result.insert_one(r.json()).inserted_id
 result_id
 
 print(db.collection_names(include_system_collections=False))
+cursor = db.result.find({})
+
+for item in cursor:
+    print(item)
