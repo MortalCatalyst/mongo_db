@@ -2,6 +2,7 @@ import json
 import pymongo
 import requests
 from pymongo import MongoClient
+from dates import listOfDates
 
 
 r = requests.get("https://api.tatts.com/sales/vmax/web/data/racing/2017/06/24/sr/full")
@@ -20,3 +21,7 @@ cursor = db.result.find({})
 
 for item in cursor:
     print(item)
+
+#TODO create URL generator
+
+print(listOfDates)

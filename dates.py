@@ -22,4 +22,3 @@ def dateDay(dayToCheck):
 
 
 listOfDates = dateDay(5)
-print(listOfDates)
